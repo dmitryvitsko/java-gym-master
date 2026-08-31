@@ -19,6 +19,6 @@ public class CounterOfTrainings implements Comparable<CounterOfTrainings> {
 
     @Override
     public int compareTo(CounterOfTrainings o) {
-        return o.getCounter() - this.getCounter();
+        return Integer.compare(o.getCounter(), this.getCounter());
     }
 }
